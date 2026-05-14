@@ -1,0 +1,76 @@
+{
+  "hotlines": [
+    {
+      "name": "Police Station 1",
+      "slug": "olongapo-mps",
+      "icon": "ShieldAlert",
+      "number": "09985985547"
+    },
+    {
+      "name": "Police Station 2",
+      "slug": "olongapo-mps",
+      "icon": "ShieldAlert",
+      "number": "09985985549"
+    },
+    {
+      "name": "Police Station 3",
+      "slug": "olongapo-mps",
+      "icon": "ShieldAlert",
+      "number": "09985985561"
+    },
+    {
+      "name": "Police Station 4",
+      "slug": "olongapo-mps",
+      "icon": "ShieldAlert",
+      "number": "09985985563"
+    },
+    {
+      "name": "Police Station 5",
+      "slug": "olongapo-mps",
+      "icon": "ShieldAlert",
+      "number": "09985985567"
+    },
+    {
+      "name": "Police Station 6",
+      "slug": "olongapo-mps",
+      "icon": "ShieldAlert",
+      "number": "09985985569"
+    },
+    {
+      "name": "Fire Station",
+      "slug": "olongapo-bfp",
+      "icon": "Flame",
+      "number": "09512779025"
+    },
+    {
+      "name": "DRRMO",
+      "slug": "mdrrmo",
+      "icon": "TriangleAlert",
+      "number": "09617609997"
+    },
+    {
+      "name": "JLGMH",
+      "slug": "james-gordon-hospital",
+      "icon": "Hospital",
+      "number": "(047) 602 1229"
+    },
+    {
+      "name": "Red Cross",
+      "slug": "red-cross",
+      "icon": "Cross",
+      "number": "09209672066"
+    },
+    {
+      "name": "OEDC",
+      "slug": "oedc",
+      "icon": "Zap",
+      "number": "09989763369"
+    },
+    {
+      "name": "SubicWater",
+      "slug": "subicwater",
+      "icon": "Droplets",
+      "number": "09291111444"
+    }
+  ]
+}
