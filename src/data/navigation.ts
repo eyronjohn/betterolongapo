@@ -1,5 +1,7 @@
 import type { NavigationItem } from '../types';
 import { serviceCategories as servicesData } from './yamlLoader';
+import popularServices from './popularService.json';
+import { governmentCategories as governmentData } from './yamlLoader';
 
 interface Subcategory {
   name: string;
@@ -12,7 +14,19 @@ interface Category {
   subcategories: Subcategory[];
 }
 
+interface PopularCategory {
+  labelKey: string;
+  label: string;
+  slug: string;
+  icon: string;
+  color: string;
+}
+
 export const mainNavigation: NavigationItem[] = [
+  {
+    label: 'Home',
+    href: '/',
+  },
   {
     label: 'Services',
     href: '/services',
@@ -23,7 +37,27 @@ export const mainNavigation: NavigationItem[] = [
   },
   {
     label: 'Government',
-    href: '/government/departments',
+    href: '/government',
+    children: (governmentData.categories as Category[]).map(category => ({
+      label: category.category,
+      href: `/government/${category.slug}`,
+    })),
+  },
+  {
+    label: 'Tourism',
+    href: '/tourism',
+  },
+  {
+    label: 'Contact',
+    href: '/contact',
+  },
+  {
+    label: 'About',
+    href: '/about',
+    children: [
+      { label: 'Olongapo', href: '/about/olongapo' },
+      { label: 'BetterGov', href: '/about/bettergov' },
+    ],
   },
 ];
 
@@ -35,19 +69,18 @@ export const footerNavigation = {
         { label: 'About the Portal', href: '/about' },
         // { label: 'Privacy Policy', href: '/privacy' },
         // { label: 'Terms of Use', href: '/terms' },
-        { label: 'Accessibility', href: '/accessibility' },
-        { label: 'Contact Us', href: '/about' },
-        { label: 'Community Discord', href: '/discord' },
+        { label: 'Contact Us', href: '/contact' },
+        { label: 'Community Discord', href: 'https://discord.gg/mHtThpN8bT' },
       ],
     },
     {
       title: 'Services',
       links: [
         { label: 'All Services', href: '/services' },
-        ...(servicesData.categories as Category[])
+        ...(popularServices.popularCategories as PopularCategory[])
           .slice(0, 6)
           .map(category => ({
-            label: category.category,
+            label: category.labelKey,
             href: `/services/${category.slug}`,
           })),
         { label: 'Hotlines', href: '/philippines/hotlines' },

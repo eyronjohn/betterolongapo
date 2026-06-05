@@ -1,0 +1,198 @@
+- slug: municipal-mayor
+  office_name: MUNICIPAL MAYOR
+  address: null
+  trunkline: null
+  website: null
+  email: null
+  department_head:
+    name: ROLEN C. PAULINO JR.
+    contact: '0917-324-5821'
+    email: null
+
+- slug: public-employment-service-office
+  office_name: PUBLIC EMPLOYMENT SERVICE OFFICE
+  address: null
+  trunkline: null
+  website: null
+  email: null
+  department_head:
+    name: Mr. Mario Esquillo
+    contact: null
+    email: null
+
+- slug: municipal-vice-mayor
+  office_name: MUNICIPAL VICE MAYOR
+  address: null
+  trunkline: null
+  website: null
+  email: null
+  department_head:
+    name: Kaye Legaspi
+    contact: '(047) 611-4823'
+    email: null
+
+- slug: municipal-planning-and-development-office
+  office_name: MUNICIPAL PLANNING AND DEVELOPMENT OFFICE
+  address: null
+  trunkline: null
+  website: null
+  email: cityplanning@olongapocity.gov.ph
+  department_head:
+    name: Arch. Tony-Kar Balde III
+    contact: '(047) 611-4826'
+    email: null
+
+- slug: local-civil-registry-office
+  office_name: LOCAL CIVIL REGISTRAR'S
+  address: null
+  trunkline: null
+  website: null
+  email: null
+  department_head:
+    name: 	Ms. Keren Cajudo
+    contact: '(047) 611-4815'
+    email: civilregistry@olongapocity.gov.ph
+
+- slug: municipal-budget-office
+  office_name: MUNICIPAL BUDGET OFFICE
+  address: null
+  trunkline: null
+  website: null
+  email: null
+  department_head:
+    name: Joy Fernandez-Cahilig
+    contact: null
+    email: citybudget@olongapocity.gov.ph
+
+- slug: municipal-accounting-office
+  office_name: MUNICIPAL ACCOUNTING OFFICE
+  address: null
+  trunkline: null
+  website: null
+  email: null
+  department_head:
+    name: Atty. Cristiflor D. Buduhan
+    contact: '(047) 611-4832'
+    email: cityaccounting@olongapocity.gov.ph
+
+- slug: municipal-treasurers-office
+  office_name: MUNICIPAL TREASURER'S OFFICE
+  address: null
+  trunkline: null
+  website: null
+  email: null
+  department_head:
+    name: Ms. Liza L. Lim
+    contact: '(047) 611-4811'
+    email: null
+
+- slug: municipal-assessors-office
+  office_name: MUNICIPAL ASSESSOR'S OFFICE
+  address: null
+  trunkline: null
+  website: null
+  email: null
+  department_head:
+    name: Aris R. Busayong
+    contact: '(047) 611-4812'
+    email: cityassessor@olongapocity.gov.ph
+
+- slug: municipal-health-office
+  office_name: MUNICIPAL HEALTH OFFICE
+  address: null
+  trunkline: null
+  website: null
+  email: null
+  department_head:
+    name: Dr. Rodrick Bustamante
+    contact: '(047) 611-4814'
+    email: 'cityhealth@olongapocity.gov.ph'
+
+
+- slug: municipal-agriculture-office
+  office_name: MUNICIPAL AGRICULTURE OFFICE
+  address: null
+  trunkline: null
+  website: null
+  email: null
+  department_head:
+    name: Francis Ela Maniago
+    contact: null
+    email: cityagriculture@olongapocity.gov.ph
+
+- slug: municipal-engineering-office
+  office_name: MUNICIPAL ENGINEERING OFFICE
+  address: null
+  trunkline: null
+  website: null
+  email: cityengineering@olongapocity.gov.ph
+  department_head:
+    name: Engr. Roberto Alvarez
+    contact: '(047) 611-4841'
+    email: 'olongapo.engineering@gmail.com'
+
+- slug: municipal-human-resource-management-office
+  office_name: HUMAN RESOURCE MANAGEMENT OFFICE
+  address: null
+  trunkline: null
+  website: null
+  email: null
+  department_head:
+    name: 	Ms. Imelda B. Abad
+    contact: '(047) 611-4835'
+    email: lguolongapohrmo@gmail.com
+
+- slug: municipal-mdrrmo-office
+  office_name: MUNICIPAL DISASTER RISK REDUCTION MANAGEMENT OFFICE
+  address: null
+  trunkline: '(047) 232-7530 '
+  website: null
+  email: 	cdrrmo@olongapocity.gov.ph
+  department_head:
+    name: Jeffrey C. Lapid
+    contact: '0998-593-7446'
+    email: null
+
+- slug: municipal-tourism-office
+  office_name: MUNICIPAL TOURISM OFFICE
+  address: null
+  trunkline: null
+  website: null
+  email: null
+  department_head:
+    name: Ms. Josefina Rosa G. Legaspi
+    contact: '(047) 602-6424'
+    email: gapotourism@gmail.com
+
+- slug: municipal-environment-and-natural-resources-office
+  office_name: MUNICIPAL ENVIRONMENT SANITATION & MANAGEMENT OFFICE
+  address: 'Engineering Compound, Arthur St., West Bajac-Bajac, Olongapo City'
+  trunkline: null
+  website: null
+  email: esmo@olongapocity.gov.ph
+  department_head:
+    name: Mrs. Loreli F. Ricasa (OIC)
+    contact: '(047) 224-9346'
+    email: esmoolongapogov@gmail.com
+
+- slug: veterinary-office
+  office_name: VETERINARY OFFICE
+  address: null
+  trunkline: null
+  website: null
+  email: null
+  department_head:
+    name: Dr. Jospeh Arnold C. Lopez
+    contact: '0909-756-2208'
+    email: null
+
+- slug: municipal-information-officer
+  office_name: MUNICIPAL INFORMATION OFFICER
+  address: null
+  trunkline: null
+  website: null
+  email: null
+  department_head:
+    name: Engr. Geraldo Ll. Angel
+    contact: '(047) 611-4888'
+    email: mis@olongapocity.gov.ph

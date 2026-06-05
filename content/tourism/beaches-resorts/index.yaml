@@ -1,0 +1,43 @@
+places:
+  - name: 'Limliwa Beach Resort'
+    slug: 'limliwa-beach-resort'
+    description: 'A beautiful beachfront resort with pristine coastline, surfing, marvelous sunsets, nature vibes, & simplicity of beach life..'
+    barangay: 'San Felipe'
+    category: 'Beaches & Resorts'
+    categoryColor: 'bg-sky-100 text-sky-700'
+    preview: true
+    image: '/images/limliwa.jpg'
+    mapsUrl: 'https://maps.app.goo.gl/vSbymCSQaVMfuUSg9'
+    featured: true
+  
+  - name: 'Camayan Beach Resort'
+    slug: 'camayan-beach-resort'
+    description: 'A a tranquil, tropical destination located in the Subic Bay Freeport Zone, Philippines, where the lush forest meets clear, calm waters'
+    category: 'Beaches & Resorts'
+    categoryColor: 'bg-sky-100 text-sky-700'
+    image: '/images/camayan.jpg'
+    mapsUrl: 'https://maps.app.goo.gl/iwFW4gJPunzbTPzS99'
+    featured: true
+
+  - name: 'White Rock Beach Resort'
+    slug: 'white-rock-beach-resort'
+    description: 'The perfect getaway for two travelers, featuring exciting water park attractions like the Big Bowl and Seesaw'
+    barangay: 'Matain'
+    category: 'Beaches & Resorts'
+    categoryColor: 'bg-sky-100 text-sky-700'
+    image: '/images/white_rock.jpg'
+    mapsUrl: 'https://maps.app.goo.gl/U9wP7rYWiTgwjkYv5'
+    featured: true
+
+  - name: 'Crystal Beach Resort'
+    slug: 'crystal-beach-resort'
+    description: 'A a haven where adventure and relaxation coexist in perfect harmony. '
+    barangay: 'San Narciso'
+    category: 'Beaches & Resorts'
+    categoryColor: 'bg-sky-100 text-sky-700'
+    image: '/images/crystal.jpg'
+    mapsUrl: 'https://maps.app.goo.gl/1s2YUPqFikqUCTVS9'
+    featured: true
+
+
+    

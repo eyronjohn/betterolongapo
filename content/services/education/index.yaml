@@ -10,10 +10,4 @@ pages:
     slug: 'apply-for-local-scholarships'
     description: 'How to apply for scholarships and educational financial assistance from your local government.'
     
-  - name: 'Access educational support programs from the LGU'
-    slug: 'access-educational-support-programs-from-the-lgu'
-    description: 'Various educational support programs and resources provided by your local government unit.'
-    
-  - name: 'Learn about supplementary activities for schools in your area'
-    slug: 'learn-about-supplementary-activities-for-schools-in-your-area'
-    description: 'Information about supplementary educational activities and programs available for schools in your area.'
+  

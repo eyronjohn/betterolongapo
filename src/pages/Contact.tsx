@@ -27,7 +27,7 @@ const Contact = () => {
       />
 
       <main aria-label="Contact information and hotlines">
-        <Section className="py-12" maxWidth="6xl">
+        <Section className="py-12" maxWidth="5xl">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2 mb-12">
             <Card>
               <CardContent className="pt-6">

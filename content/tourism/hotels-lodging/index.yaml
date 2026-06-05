@@ -1,0 +1,20 @@
+places:
+  - name: 'RedDoorz Hotel'
+    slug: 'reddoorz-hotel'
+    description: 'A hotel set in a commercial area with businesses and shops, this straightforward hotel is 2 km from the Inflatable Island beachfront water park'
+    category: 'Hotels & Lodging'
+    categoryColor: 'bg-indigo-100 text-indigo-700'
+    mapsUrl: 'https://maps.app.goo.gl/MFSsaF37fm55XuqS7'
+    image: '/images/red_doorz.jpg'
+    socialUrl: 'https://web.facebook.com/reddoorzlyn'
+
+  - name: 'Cherry Midtown'
+    slug: 'cherry-midtown'
+    description: 'A place where you can stay and relax for your holidays or a place to rest and get to places with ease as we are located in a strategic location where public or private transportation is not going to be a problem.'
+    category: 'Hotels & Lodging'
+    categoryColor: 'bg-sky-100 text-sky-700'
+    image: '/images/cherry_midtown.jpg'
+    mapsUrl: 'https://maps.app.goo.gl/niqrcUddM1gvWCgp8'
+    contact: '0999 994 9463'
+    socialUrl: 'https://web.facebook.com/CherryMidtownHotel'
+    featured: true

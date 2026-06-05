@@ -1,0 +1,269 @@
+- slug: barangay-asinan
+  barangay_name: ASINAN
+  address: null
+  trunkline:
+    - ''
+  website: null
+  officials:
+    - role: Punong Barangay
+      name: Angelo Gregg Elane
+      contact: ''
+      email: null
+    - role: SK Treasurer
+      name: Trishia Nito
+      contact: null
+      email: 
+
+- slug: barangay-banicain
+  barangay_name: BANICAIN
+  address: null
+  trunkline:
+    - ''
+  website: null
+  officials:
+    - role: Punong Barangay
+      name: Vivencio Viray
+      contact: null
+      email: null
+    - role: SK Chairperson
+      name: Abigsail Sobrero
+      contact: null
+      email: null
+
+- slug: barangay-barretto
+  barangay_name: BARRETTO
+  address: null
+  trunkline:
+    - ''
+  website: null
+  officials:
+    - role: Punong Barangay
+      name: null
+      contact: null
+      email: null
+    - role: SK Chairperson
+      name: Angeli Bonilla
+      contact: null
+      email: null
+
+- slug: barangay-east-baja-bajac
+  barangay_name: EAST BAJAC-BAJAC
+  address: null
+  trunkline:
+    - ''
+  website: null
+  officials:
+    - role: Punong Barangay
+      name: Erma Manalang
+      contact: null
+      email: null
+    - role: SK Chairperson
+      name: Christine Mayor
+      contact: null
+      email: null
+
+- slug: barangay-east-tapinac
+  barangay_name: EAST TAPINAC
+  address: null
+  trunkline:
+    - '047-223-3444'
+  website: null
+  officials:
+    - role: Punong Barangay
+      name: Dante Hondo
+      contact: '047-223-3444'
+      email: null
+    - role: SK Chairperson
+      name: Jheyzel Gayatin
+      contact: null
+      email: null
+
+- slug: barangay-gordon-heights
+  barangay_name: GORDON HEIGHTS
+  address: null
+  trunkline:
+    - ''
+  website: null
+  officials:
+    - role: Punong Barangay
+      name: Prescilla Ponge
+      contact: null
+      email: null
+    - role: SK Chairperson
+      name: null
+      contact: null
+      email: null
+
+- slug: barangay-kalaklan
+  barangay_name: KALAKLAN
+  address: null
+  trunkline:
+    - ''
+  website: null
+  officials:
+    - role: Punong Barangay
+      name: Willian Umali
+      contact: null
+      email: null
+    - role: SK Chairperson
+      name: Donnah Lim
+      contact: null
+      email: null
+
+- slug: barangay-mabayuan
+  barangay_name: MABAYUAN
+  address: null
+  trunkline:
+    - '09056932793'
+  website: null
+  officials:
+    - role: Punong Barangay
+      name: Edwin Esposo
+      contact: null
+      email: null
+    - role: SK Chairperson
+      name: Yzyra Hernandez
+      contact: null
+      email: null
+
+- slug: barangay-new-cabalan
+  barangay_name: NEW CABALAN
+  address: null
+  trunkline:
+    - null
+  website: null
+  officials:
+    - role: Punong Barangay
+      name: Delbert Muega
+      contact: null
+      email: null
+    - role: SK Chairperson
+      name: Christian Dy
+      contact: null
+      email: null
+
+- slug: barangay-new-ilalim
+  barangay_name: NEW ILALIM
+  address: null
+  trunkline:
+    - null
+  website: null
+  officials:
+    - role: Punong Barangay
+      name: John Culanag
+      contact: null
+      email: null
+    - role: SK Chairperson
+      name: Aljohn Argonza
+      contact: null
+      email: null
+
+- slug: barangay-new-kababae
+  barangay_name: NEW KABABAE
+  address: null
+  trunkline:
+    - null
+  website: null
+  officials:
+    - role: Punong Barangay
+      name: Warren Negradas
+      contact: null
+      email: null
+    - role: SK Chairperson
+      name: Ariel Quinto
+      contact: null
+      email: null
+
+- slug: barangay-new-kalalake
+  barangay_name: NEW KALALAKE
+  address: null
+  trunkline:
+    - null
+  website: null
+  officials:
+    - role: Punong Barangay
+      name: Sherwin Sionzon
+      contact: null
+      email: null
+    - role: SK Chairperson
+      name: Ajie Alano
+      contact: null
+      email: null
+
+- slug: barangay-old-cabalan
+  barangay_name: OLD CABALAN
+  address: null
+  trunkline:
+    - null
+  website: null
+  officials:
+    - role: Punong Barangay
+      name: rolando Alba
+      contact: '09453068819'
+      email: null
+    - role: SK Chairperson
+      name: Angel Bibanco
+      contact: null
+      email: null
+
+- slug: barangay-pag-asa
+  barangay_name: PAG-ASA
+  trunkline:
+    - null
+  website: null
+  officials:
+    - role: Punong Barangay
+      name: Rodolfo Catologan
+      contact: null
+      email: null
+    - role: SK Chairperson
+      name: Dana Viray
+      contact: null
+      email: null
+
+- slug: barangay-santa-rita
+  barangay_name: SANTA-RITA
+  address: null
+  trunkline: null
+  website: null
+  officials:
+    - role: Punong Barangay
+      name: Rowena Cerezo
+      contact: null
+      email: null
+    - role: SK Chairperson
+      name: Jerry Nidoy 
+      contact: null
+      email: null
+
+- slug: barangay-west-bajac-bajac
+  barangay_name: WEST BAJAC-BAJAC
+  address: null
+  trunkline:
+    - '09674350111'
+  website: null
+  officials:
+    - role: Punong Barangay
+      name: Billy Capistrano
+      contact: null
+      email: null
+    - role: SK Chairperson
+      name: Tristan Pamintuan
+      contact: null
+      email: null
+
+- slug: barangay-west-tapinac
+  barangay_name: WEST TAPINAC
+  address: null
+  trunkline:
+    - '0917-598-1973'
+  website: null
+  officials:
+    - role: Punong Barangay
+      name: Donald Aquino
+      contact: null
+      email: null
+    - role: SK Chairperson
+      name: John Dela Pena
+      contact: null
+      email: null

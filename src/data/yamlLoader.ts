@@ -43,6 +43,12 @@ import environmentIndex from '../../content/services/environment/index.yaml?raw'
 import disasterPreparednessIndex from '../../content/services/disaster-preparedness/index.yaml?raw';
 import housingLandUseIndex from '../../content/services/housing-land-use/index.yaml?raw';
 import governmentDepartmentsIndex from '../../content/government/departments/index.yaml?raw';
+// import electedOfficialsIndex from '../../content/government/elected-officials/index.yaml?raw';
+import municipalOfficesIndex from '../../content/government/municipal-offices/index.yaml?raw';
+import barangaysIndedex from '../../content/government/barangays/index.yaml?raw';
+// import governmentIndex from '../../content/government/index.yaml?raw';
+import executiveIndex from '../../content/government/elected-officials/executive/index.yaml?raw';
+import legislativeIndex from '../../content/government/elected-officials/legislative/index.yaml?raw';
 import governmentDepartmentsLegislativeIndex from '../../content/government/departments/legislative/index.yaml?raw';
 
 // Create a mapping of category slugs to their YAML content
@@ -69,6 +75,46 @@ export const serviceCategories: CategoryData = yaml.load(
 export const governmentCategories: CategoryData = yaml.load(
   governmentActivitiesYamlContent
 ) as CategoryData;
+
+export const executiveOfficials: ExecutiveOfficial[] =
+  parseYamlArray(executiveIndex);
+
+export const legislativeOfficials: LegislativeOfficial[] =
+  parseYamlArray(legislativeIndex);
+
+export const municipalOffices: MunicipalOffice[] = parseYamlArray(
+  municipalOfficesIndex
+);
+
+export const barangays: Barangay[] = parseYamlArray(barangaysIndedex);
+
+export const aboutOlongapoData: AboutOlongapoData = parseYamlObject(
+  aboutOlongapoYamlContent,
+  {
+    name: '',
+    province: '',
+    description: '',
+    history: '',
+    geography: '',
+    economy: '',
+    stats: [],
+    timeline: [],
+    card_description: '',
+  }
+);
+
+export const aboutBetterGovData: AboutBetterGovData = parseYamlObject(
+  aboutBetterGovYamlContent,
+  {
+    name: '',
+    tagline: '',
+    description: '',
+    mission: '',
+    why: '',
+    benefits: [],
+    card_description: '',
+  }
+);
 
 export interface CategoryIndex {
   title?: string;
@@ -123,3 +169,28 @@ export async function getCategorySubcategories(
 export function isNestedCategory(slug: string): boolean {
   return slug in categoryIndexMap;
 }
+
+function parseYamlArray<T>(yamlContent: string): T[] {
+  try {
+    const parsed = yaml.load(yamlContent);
+    if (Array.isArray(parsed)) return parsed as T[];
+    if (parsed && typeof parsed === 'object' && 'officials' in parsed)
+      return (parsed as { officials: T[] }).officials;
+    return [];
+  } catch {
+    return [];
+  }
+}
+
+function parseYamlObject<T>(yamlContent: string, fallback: T): T {
+  try {
+    const parsed = yaml.load(yamlContent);
+    if (parsed && typeof parsed === 'object') return parsed as T;
+    return fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+import aboutOlongapoYamlContent from './about_olongapo.yaml?raw';
+import aboutBetterGovYamlContent from './about_bettergov.yaml?raw';

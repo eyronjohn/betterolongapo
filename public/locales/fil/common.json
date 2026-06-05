@@ -1,0 +1,190 @@
+{
+  "site_name": "Munisipyo ng Olongapo",
+  "site_description": "Isang portal para sa Munisipyo ng Olongapo",
+  "hero": {
+    "title": "Maligayang pagdating sa BetterGov.ph",
+    "subtitle": "Isang portal ng komunidad para mahanap ang impormasyon at serbisyo ng Munisipyo ng Olongapo City.",
+    "welcome": "MALIGAYANG PAGDATING SA",
+    "browseServices": "Tingnan ang mga Serbisyo",
+    "contactUs": "Makipag-ugnayan",
+    "findService": "Maghanap ng Serbisyo",
+    "searchPlaceholder": "Maghanap ng serbisyo...",
+    "popular": "Mga Sikat na Serbisyo",
+    "nationalId": "National ID",
+    "birthCertificate": "Sertipiko ng Kapanganakan",
+    "businessRegistration": "Rehistro ng Negosyo"
+  },
+  "hotlines": {
+    "police": "Himpilan ng Pulisya",
+    "hospital": "Tanggapan ng Kalusugan",
+    "fire": "Himpilan ng Bombero",
+    "mdrrmo": "MDRRMO"
+  },
+  "emergencyHotlines": {
+    "title": "Mga Emergency Hotline ng Indang",
+    "mdrrmo": {
+      "name": "MDRRMO",
+      "numbers": ["0961-992-1998", "0952-652-9265", "046-433-9220"]
+    },
+    "fire": {
+      "name": "Himpilan ng Bombero",
+      "numbers": ["046-415-1217", "0915-603-4245"]
+    },
+    "police": {
+      "name": "Himpilan ng Pulisya",
+      "numbers": ["0949-184-9145", "0915-913-7693", "0998-598-5603"]
+    },
+    "health": {
+      "name": "Tanggapan ng Kalusugan",
+      "numbers": ["046-840-1705", "0977-766-6707"]
+    }
+  },
+  "services": {
+    "title": "Mga Serbisyo at Impormasyon",
+    "governmentServices": "Mga Serbisyong Pambayan",
+    "description": "I-access ang opisyal na serbisyo ng pamahalaan nang mabilis at madali. Hanapin ang kailangan mo para sa pagkamamamayan, negosyo, edukasyon, at iba pa.",
+    "viewAll": "Tingnan ang Lahat ng Serbisyo",
+    "viewAllCategory": "Tingnan Lahat",
+    "categories": {
+      "health-services": { "name": "Mga Serbisyong Pangkalusugan" },
+      "education": { "name": "Edukasyon" },
+      "business": { "name": "Negosyo at Kabuhayan" },
+      "social-welfare": { "name": "Kagalingang Panlipunan" },
+      "agriculture-fisheries": { "name": "Agrikultura at Pangisdaan" },
+      "infrastructure-public-works": {
+        "name": "Imprastraktura at Gawaing Bayan"
+      },
+      "garbage-waste-disposal": { "name": "Basura at Pagtatapon" },
+      "environment": { "name": "Kalikasan" },
+      "housing-land-use": { "name": "Pabahay at Paggamit ng Lupa" },
+      "disaster-preparedness": { "name": "Kahandaan sa Sakuna" }
+    }
+  },
+  "governmentActivity": {
+    "title": "Aktibidad ng Pamahalaan",
+    "description": "Manatiling updated sa pinakabagong mga aktibidad at anunsyo ng pamahalaan."
+  },
+  "stats": {
+    "title": "Olongapo sa Isang Tingin",
+    "viewProfile": "Tingnan ang Profile ng Munisipyo",
+    "population": {
+      "label": "Mga Residente",
+      "desc": "Populasyon ayon sa senso ng 2020"
+    },
+    "barangays": {
+      "label": "Mga Barangay",
+      "desc": "Mga administratibong nayon"
+    },
+    "classification": {
+      "label": "1st Class na Munisipyo",
+      "desc": "Klasipikasyon ng kita"
+    },
+    "area": {
+      "label": "km²",
+      "desc": "Kabuuang lawak ng lupa"
+    }
+  },
+  "weatherMap": {
+    "title": "Panahon at Lokasyon",
+    "location": "Olongapo, Zambales",
+    "clear": "Maliwanag na langit",
+    "partlyCloudy": "Bahagyang maulap",
+    "foggy": "Makulimlim",
+    "rainy": "Maulan",
+    "showers": "Ulan-ulan",
+    "thunderstorm": "Bagyo",
+    "defaultCondition": "Kinukuha ang datos ng panahon...",
+    "wind": "km/h hangin",
+    "climate": "Tropikong klima",
+    "elevation": "299.5m taas",
+    "loading": "Kinukuha ang datos ng panahon...",
+    "mapTitle": "Mapa ng Olongapo, Zambales"
+  },
+  "leadership": {
+    "title": "Pamunuan ng Munisipyo",
+    "cityMayor": "Alkalde ng Munisipyo",
+    "cityViceMayor": "Bise-Alkalde ng Munisipyo",
+    "electedMayor": "Inihalal na Alkalde",
+    "electedViceMayor": "Inihalal na Bise-Alkalde",
+    "viewAll": "Tingnan ang Lahat ng Opisyal",
+    "viewProfile": "Tingnan ang Profile"
+  },
+  "contact": {
+    "title": "Makipag-ugnayan",
+    "phone": "Telepono",
+    "phoneHours": "Lun–Biy, 8AM–5PM",
+    "email": "Email",
+    "emailResponse": "Sagot sa loob ng 2 araw na trabaho",
+    "address": "Address",
+    "addressLine1": "Munisipyo ng Olongapo City",
+    "addressLine2": "Poblacion 1, Olongapo, Zambales 2200",
+    "viewAll": "Tingnan ang Lahat ng Departamento"
+  },
+  "weather": {
+    "title": "Mga Update sa Panahon"
+  },
+  "forex": {
+    "title": "Mga Palitan ng Pera"
+  },
+  "news": {
+    "title": "Pinakabagong Balita at Mga Update"
+  },
+  "footer": {
+    "copyright": "© 2026 BetterIndang.org · CC0 1.0 Universal · v0.2.0",
+    "about": "Tungkol sa Portal",
+    "sitemap": "Sitemap",
+    "accessibility": "Aksesibilidad",
+    "discord": "Community Discord",
+    "contactUs": "Makipag-ugnayan",
+    "openData": "Open Data",
+    "foi": "Kalayaan sa Impormasyon (FOI)",
+    "facebook": "LGU Indang Facebook",
+    "sangguniangBayan": "Sangguniang Bayan",
+    "dilgDisclosure": "DILG Full Disclosure",
+    "dtiCmci": "DTI CMCI",
+    "blgf": "BLGF",
+    "costTitle": "Gastos sa mga Tao ng Indang",
+    "volunteer": "Magboluntaryo sa Amin",
+    "contribute": "Mag-ambag sa GitHub",
+    "notOfficial": "Hindi opisyal na website ng gobyerno.",
+    "builtByCommunity": "Gawa ng komunidad",
+    "quickLinks": "Mga Quick Link",
+    "resources": "Mga Mapagkukunan"
+  },
+  "navbar": {
+    "government": "Pamahalaan",
+    "services": "Mga Serbisyo",
+    "hotlines": "Mga Hotline",
+    "holidays": "Mga Pista Opisyal",
+    "home": "Tahanan",
+    "statistics": "Estadistika",
+    "legislative": "Lehislatura",
+    "transparency": "Transparansya",
+    "contact": "Makipag-ugnayan",
+    "tourism": "Turismo",
+    "departments": "Mga Kagawaran at Opisyal",
+    "officials": "Direktoryo ng Lokal na Opisyal",
+    "fullDisclosure": "Patakaran sa Ganap na Pagbubunyag (FDP)",
+    "transparencyDocs": "Mga Dokumento ng Transparansya",
+    "reportsStats": "Mga Ulat at Estadistika",
+    "budget": "Taunang Badyet",
+    "foi": "Kalayaan sa Impormasyon (FOI)",
+    "profile": "Profile ng Munisipyo",
+    "dtiProfile": "DTI CMCI Profile",
+    "barangayData": "Datos ng Barangay",
+    "openData": "Open Data PH"
+  },
+  "joinUs": {
+    "stripTitle": "🚀 Sumali sa #CivicTech Revolution",
+    "stripSubtitle": "Tulungan kaming buuin ang kinabukasan ng Pilipinas sa pamamagitan ng teknolohiya",
+    "joinNow": "Sumali Na",
+    "discord": "Discord",
+    "bannerTitle": "Sumali sa #CivicTech Revolution",
+    "bannerSubtitle": "Tulungan kaming buuin ang kinabukasan ng pamamahala sa pamamagitan ng teknolohiya.",
+    "bannerHighlight": "Pinamumunuan ng mga boluntaryo. Open source. Pinapatakbo ng komunidad.",
+    "joinMovement": "Sumali sa Kilusan",
+    "or": "o",
+    "joinDiscord": "Sumali sa Discord",
+    "features": "🚀 Imprastraktura • 💡 Mentorship • 🤝 Komunidad • 🏢 Espasyo sa Opisina"
+  }
+}

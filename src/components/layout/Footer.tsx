@@ -1,125 +1,229 @@
 import React from 'react';
 import {
   Facebook,
-  Twitter,
-  Instagram,
-  Youtube,
-  CheckCircle2,
+  Github,
+  MessageCircle,
+  Mail,
+  ExternalLink,
 } from 'lucide-react';
-import { footerNavigation } from '../../data/navigation';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
+const QUICK_LINKS = [
+  { label: 'About Olongapo', labelKey: 'footer.about', href: '/about' },
+  { label: 'Contact Us', labelKey: 'footer.contactUs', href: '/about' },
+  {
+    label: 'Community Discord',
+    labelKey: 'footer.discord',
+    href: 'https://discord.gg/',
+    external: true,
+  },
+];
+
+const RESOURCE_LINKS = [
+  {
+    label: 'Open Data',
+    labelKey: 'footer.openData',
+    href: 'https://data.gov.ph',
+    external: true,
+  },
+  {
+    label: 'Freedom of Information',
+    labelKey: 'footer.foi',
+    href: 'https://www.foi.gov.ph',
+    external: true,
+  },
+  {
+    label: 'Olongapo City Page',
+    labelKey: 'footer.facebook',
+    href: 'https://web.facebook.com/olongapopublicaffairs',
+    external: true,
+  },
+];
+
 const Footer: React.FC = () => {
   const { t } = useTranslation('common');
-
-  const getSocialIcon = (label: string) => {
-    switch (label) {
-      case 'Facebook':
-        return <Facebook className="h-5 w-5" />;
-      case 'Twitter':
-        return <Twitter className="h-5 w-5" />;
-      case 'Instagram':
-        return <Instagram className="h-5 w-5" />;
-      case 'YouTube':
-        return <Youtube className="h-5 w-5" />;
-      default:
-        return null;
-    }
-  };
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 pt-12 pb-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* 4-column grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          {/* Col 1 — Brand */}
           <div>
-            <div className="flex items-center mb-4">
-              <CheckCircle2 className="h-12 w-12 mr-3" />
-              {/* <img
-                src="/ph-logo.webp"
-                alt="Philippines Coat of Arms"
-                className="h-12 w-12 mr-3"
-              /> */}
-
-              <div>
-                <div className="font-bold">{t('site_name')}</div>
-                <div className="text-xs text-gray-400">BetterGov.ph Portal</div>
+            {/* <img
+              src="/logo-clear.svg"
+              alt={t('site_name')}
+              className="h-12 w-auto max-w-[180px] object-contain mb-4"
+            /> */}
+            <Link to="/" className="mb-4 flex items-center gap-3">
+              <img
+                src="/logo-clear.png"
+                alt=""
+                className="h-12 w-12 object-contain"
+              />
+              <div className="leading-tight">
+                <div className="text-base font-bold">
+                  Better<span className="text-blue-300">Olongapo</span>
+                </div>
+                <div className="text-[10px] uppercase tracking-[0.14em] text-gray-500">
+                  .org
+                </div>
               </div>
-            </div>
-            <p className="text-gray-400 text-sm mb-4">
-              A community portal providing Philippine citizens, businesses, and
-              visitors with information and services.
+            </Link>
+            <p className="text-gray-400 text-sm leading-relaxed mb-5">
+              {t(
+                'hero.subtitle',
+                'A community-run portal to find information and services of the Municipality of Indang, Cavite.'
+              )}
             </p>
-            <div className="flex space-x-4">
-              {footerNavigation.socialLinks.map(link => (
-                <Link
-                  key={link.label}
-                  to={link.href}
-                  className="text-gray-400 hover:text-white transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {getSocialIcon(link.label)}
-                </Link>
-              ))}
+            <div className="flex items-center gap-3">
+              <a
+                href="https://web.facebook.com/olongapopublicaffairs"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-gray-800 text-gray-400 hover:bg-blue-600 hover:text-white transition-colors"
+              >
+                <Facebook className="h-4 w-4" />
+              </a>
+              <a
+                href="https://github.com/eyronjohn/betterolongapo"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                className="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-gray-800 text-gray-400 hover:bg-gray-600 hover:text-white transition-colors"
+              >
+                <Github className="h-4 w-4" />
+              </a>
+              <a
+                href="https://discord.gg/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Discord"
+                className="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-gray-800 text-gray-400 hover:bg-indigo-600 hover:text-white transition-colors"
+              >
+                <MessageCircle className="h-4 w-4" />
+              </a>
             </div>
           </div>
 
-          {footerNavigation.mainSections.map(section => (
-            <div key={section.title}>
-              <h3 className="text-lg font-semibold mb-4">{section.title}</h3>
-              <ul className="space-y-2">
-                {section.links.map(link => (
+          {/* Col 2 — Quick Links */}
+          <div>
+            <h4 className="text-sm font-bold uppercase tracking-widest text-gray-300 mb-4">
+              {t('footer.quickLinks', 'Quick Links')}
+            </h4>
+            <ul className="space-y-2.5">
+              {QUICK_LINKS.map(link =>
+                link.external ? (
+                  <li key={link.label}>
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1.5 text-gray-400 hover:text-white text-sm transition-colors"
+                    >
+                      {t(link.labelKey, link.label)}
+                      <ExternalLink className="h-3 w-3 opacity-50" />
+                    </a>
+                  </li>
+                ) : (
                   <li key={link.label}>
                     <Link
                       to={link.href}
                       className="text-gray-400 hover:text-white text-sm transition-colors"
                     >
-                      {link.label}
+                      {t(link.labelKey, link.label)}
                     </Link>
                   </li>
-                ))}
-              </ul>
+                )
+              )}
+            </ul>
+          </div>
+
+          {/* Col 3 — Resources */}
+          <div>
+            <h4 className="text-sm font-bold uppercase tracking-widest text-gray-300 mb-4">
+              {t('footer.resources', 'Resources')}
+            </h4>
+            <ul className="space-y-2.5">
+              {RESOURCE_LINKS.map(link =>
+                link.external ? (
+                  <li key={link.label}>
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1.5 text-gray-400 hover:text-white text-sm transition-colors"
+                    >
+                      {t(link.labelKey, link.label)}
+                      <ExternalLink className="h-3 w-3 opacity-50" />
+                    </a>
+                  </li>
+                ) : (
+                  <li key={link.label}>
+                    <Link
+                      to={link.href}
+                      className="text-gray-400 hover:text-white text-sm transition-colors"
+                    >
+                      {t(link.labelKey, link.label)}
+                    </Link>
+                  </li>
+                )
+              )}
+            </ul>
+          </div>
+
+          {/* Col 4 — Cost / Contribute */}
+          <div>
+            <div
+              className="inline-flex items-baseline gap-2 bg-green-900/40 border border-green-700/50 rounded-xl px-4 py-3 mb-5"
+              role="status"
+              aria-label={t(
+                'footer.costTitle',
+                'Cost to the People of Olongapo'
+              )}
+            >
+              <span className="text-sm text-green-300 font-medium">
+                {t('footer.costTitle', 'Cost to the People of Olongapo')}
+              </span>
+              <span className="text-2xl font-black text-green-400">₱0</span>
             </div>
-          ))}
+
+            <div className="flex flex-col gap-2.5">
+              <a
+                href="https://github.com/eyronjohn/betterolongapo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-gray-800 text-gray-300 hover:bg-primary-700 hover:text-white text-sm font-semibold transition-colors"
+              >
+                <Mail className="h-4 w-4 shrink-0" />
+                {t('footer.volunteer', 'Volunteer with Us')}
+              </a>
+              <a
+                href="https://github.com/eyronjohn/betterolongapo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-gray-800 text-gray-300 hover:bg-gray-700 hover:text-white text-sm font-semibold transition-colors"
+              >
+                <Github className="h-4 w-4 shrink-0" />
+                {t('footer.contribute', 'Contribute at GitHub')}
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              {t('footer.copyright')}
-            </p>
-            <div className="flex space-x-6">
-              {/* <a
-                href="/privacy"
-                className="text-gray-400 hover:text-white text-sm transition-colors"
-              >
-                Privacy Policy
-              </a>
-              <a
-                href="/terms"
-                className="text-gray-400 hover:text-white text-sm transition-colors"
-              >
-                Terms of Use
-              </a> */}
-              <Link
-                to="https://github.com/bettergovph/bettergov"
-                className="text-gray-400 hover:text-white text-sm transition-colors"
-              >
-                Contribute at GitHub
-              </Link>
-              <Link
-                to="/sitemap"
-                className="text-gray-400 hover:text-white text-sm transition-colors"
-              >
-                Sitemap
-              </Link>
-              <a
-                href="/accessibility"
-                className="text-gray-400 hover:text-white text-sm transition-colors"
-              >
-                Accessibility
-              </a>
+        {/* Bottom bar */}
+        <div className="border-t border-gray-800 mt-10 pt-6">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-sm text-gray-500">
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+              <span>&copy; {currentYear} BetterOlongapo.org</span>
+              <span className="hidden sm:inline text-gray-700">·</span>
+              <span className="hidden sm:inline text-gray-700">·</span>
+              <span className="text-gray-600">
+                {t('footer.notOfficial', 'Not an official government website.')}
+              </span>
             </div>
           </div>
         </div>

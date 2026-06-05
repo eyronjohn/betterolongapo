@@ -1,0 +1,90 @@
+# Olongapo Municipality Data
+# Non-technical contributors can edit this file to update content on the About Olongapo .
+
+name: Olongapo City
+province: Zambales
+region: Region III (Central Luzon)
+
+description: >
+  Olongapo is a vibrant, highly urbanized coastal city in Zambales, Philippines, 
+  renowned as a former U.S. Naval base turned tourism, industrial, and commercial hub.
+
+history: >
+  Long ago along the shores of Subic Bay, there lived a village 
+  led by a wise and just chieftain known as Apo, who was loved 
+  for his fairness and compassion toward his people. His 
+  leadership brought peace and unity, but he was later taken and 
+  killed by envious enemies who feared his influence. When his 
+  head was discovered, the grieving villagers cried “Ulo ng Apo,” 
+  turning their sorrow into a rallying cry of unity and resistance. 
+  From this event, the place came to be known as 
+  Olongapo, a name that honors the memory of their beloved leader.
+
+geography: >
+  Olongapo is a coastal, highly urbanized city in Zambales, 
+  Central Luzon, Philippines, situated 127 km north of Manila. 
+  It is defined by its, mountain-fringed, triangular landscape 
+  between the rugged Zambales Mountains and Subic Bay
+
+stats:
+  - label: Population
+    value: '264,903'
+    sublabel: Population (2024 Census)
+    icon: Users
+
+  - label: Barangays
+    value: '17'
+    sublabel: Administrative divisions
+    asOf: As of 2024
+    icon: MapPin
+
+  - label: Land Area
+    value: 71.43 km²
+    sublabel: Total municipal coverage
+    asOf: As of 2025
+    icon: Map
+
+  - label: Founded
+    value: 1885
+    sublabel: Date of establishment
+    icon: Award
+
+timeline:
+  - year: Pre-1868
+    event: >
+      Early coastal communities develop around Subic Bay, with 
+      settlements sustained by fishing and maritime activity. 
+      The area becomes an important natural 
+      harbor and local trading point long before formal colonial control.
+
+  - year: 1868-1885
+    event: >
+      Spain recognizes the strategic value of Subic Bay and 
+      establishes a naval presence, eventually forming a 
+      settlement that becomes Olongapo. By 1885, the Spanish Navy constructs the 
+      Arsenal and develops the area into a fortified naval station.
+
+  - year: 1898–1945
+    event: >
+      After the Spanish–American War, control passes to the 
+      United States, which expands and modernizes the naval 
+      base under executive order. During World War II, the area 
+      is destroyed and occupied by Japanese forces, then later 
+      liberated by Filipino and American troops.
+
+  - year: 1946–1966
+    event: >
+      After Philippine independence, Olongapo is rebuilt around the 
+      remaining U.S. naval base and gradually develops into a 
+      self-sustaining town. In 1966, it is officially converted into a chartered city through R.A. 4645, 
+      marking its formal political establishment.
+
+  - year: Present
+    event: >
+      Olongapo continues to grow as highly-urbanized cityand a home to over 264,000
+      residents across 17 barangays.
+
+card_description: >
+  The southern gateway between Luzon and the Visayas — a coastal municipality
+  defined by the sea, the San Bernardino Strait, and the constant movement of
+  people passing through.

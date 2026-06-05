@@ -1,0 +1,46 @@
+{
+  "popularCategories": [
+    {
+      "labelKey": "services.business.category",
+      "label": "Business",
+      "slug": "business",
+      "icon": "Briefcase",
+      "color": "text-blue-600 bg-blue-50"
+    },
+    {
+      "labelKey": "services.health-services.category",
+      "label": "Health",
+      "slug": "health-services",
+      "icon": "Heart",
+      "color": "text-red-500 bg-red-50"
+    },
+    {
+      "labelKey": "services.tax-revenue.category",
+      "label": "Tax",
+      "slug": "tax-revenue",
+      "icon": "PhilippinePeso",
+      "color": "text-green-600 bg-green-50"
+    },
+    {
+      "labelKey": "services.garbage-waste-disposal.category",
+      "label": "Waste",
+      "slug": "garbage-waste-disposal",
+      "icon": "Trash2",
+      "color": "text-orange-500 bg-orange-50"
+    },
+    {
+      "labelKey": "services.social-welfare.category",
+      "label": "Social-Welfare",
+      "slug": "social-welfare",
+      "icon": "HandCoins",
+      "color": "text-emerald-600 bg-emerald-50"
+    },
+    {
+      "labelKey": "services.civil-registry.category",
+      "label": "Civil Registry",
+      "slug": "civil-registry",
+      "icon": "FileStack",
+      "color": "text-purple-600 bg-purple-50"
+    }
+  ]
+}

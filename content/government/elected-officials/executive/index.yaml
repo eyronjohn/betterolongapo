@@ -1,0 +1,29 @@
+- slug: office-of-the-mayor
+  name: Rolen C. Paulino Jr.
+  role: Mayor
+  office: Office of the Mayor
+  address: RM 201, 2nd Floor, City Hall Complex
+  contact:
+    email: 'citymayorsoffice@olongapocity.gov.ph'
+    phone: '(047) 611-4809'
+  website: https://www.facebook.com/mayorlenjpaulino
+  isElected: true
+  personId: rolen-paulino
+
+- slug: office-of-the-vice-mayor
+  name: Kaye Legaspi
+  role: Vice Mayor
+  office: Office of the Vice Mayor
+  address: RM 202, 2nd Floor, City Hall Complex
+  contact:
+    email: 'citycouncil@olongapocity.gov.ph'
+    phone: '(047) 611-4823'
+  website: https://www.facebook.com/KayeLegaspiPH
+  isElected: true
+  personId: kaye-legaspi
+# - slug: chief-of-staff
+#   name:
+#   role: Chief of Staff
+#   phone: null
+#  email: null
+#  isElected: false

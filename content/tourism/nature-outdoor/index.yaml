@@ -1,0 +1,10 @@
+places:
+  - name: 'Zoobic Safari'
+    slug: 'zoobic-safari'
+    description: 'An exciting wildlife sanctuary offering a unique safari experience'
+    barangay: 'SBFZ'
+    category: 'Nature & Outdoor'
+    categoryColor: 'bg-emerald-100 text-emerald-700'
+    mapsUrl: 'https://maps.app.goo.gl/uLcxT6eakKfnbMbw66'
+    image: '/images/zoobic_safari.jpg'
+    preview: true

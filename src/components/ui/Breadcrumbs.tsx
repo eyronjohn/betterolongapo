@@ -54,12 +54,12 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items, className = '' }) => {
           {item.href ? (
             <Link
               to={item.href}
-              className="hover:text-primary-600 transition-colors duration-200"
+              className="hover:text-gray-500 hover:underline transition-colors duration-200"
             >
               {item.label.charAt(0).toUpperCase() + item.label.slice(1)}
             </Link>
           ) : (
-            <span className="text-gray-900 font-medium" aria-current="page">
+            <span className="text-gray-100 font-bold" aria-current="page">
               {item.label.charAt(0).toUpperCase() + item.label.slice(1)}
             </span>
           )}

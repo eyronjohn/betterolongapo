@@ -7,8 +7,6 @@ import {
   Heart,
   GraduationCap,
   Trash2,
-  TreePine,
-  Home,
 } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -46,25 +44,18 @@ const POPULAR_CATEGORIES = [
     color: 'text-green-600 bg-green-50',
   },
   {
+    labelKey: 'services.categories.social-welfare.name',
+    label: 'Social Welfare',
+    slug: 'social-welfare',
+    icon: Users,
+    color: 'text-violet-600 bg-blue-50',
+  },
+  {
     labelKey: 'services.categories.garbage-waste-disposal.name',
     label: 'Waste',
     slug: 'garbage-waste-disposal',
     icon: Trash2,
     color: 'text-orange-500 bg-orange-50',
-  },
-  {
-    labelKey: 'services.categories.environment.name',
-    label: 'Environment',
-    slug: 'environment',
-    icon: TreePine,
-    color: 'text-emerald-600 bg-emerald-50',
-  },
-  {
-    labelKey: 'services.categories.housing-land-use.name',
-    label: 'Housing',
-    slug: 'housing-land-use',
-    icon: Home,
-    color: 'text-purple-600 bg-purple-50',
   },
 ];
 

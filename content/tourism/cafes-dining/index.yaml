@@ -1,0 +1,20 @@
+places:
+  - name: "Kape ni Mon"
+    slug: 'kape-ni-mon'
+    description: 'A local cafe with a variety coffee drinks at am affordable price.'
+    category: 'Cafes & Dining'
+    barangay: 'East Bajac-Bajac'
+    categoryColor: 'bg-amber-100 text-amber-700'
+    image: '/images/kape_ni_mon.jpg'
+    mapsUrl: 'https://maps.app.goo.gl/xb48DqNKPA99bB6q9'
+    socialUrl: 'https://web.facebook.com/p/Kape-ni-Mon-61554902993657/'
+
+  - name: "Hometown Cafe"
+    slug: 'hometown-cafe'
+    description: 'A specialty coffee shop, micro coffee roastery, bakery, kitchen, and cocktail bar.'
+    category: 'Cafes & Dining'
+    barangay: 'Subic Bay Freeport Zone'
+    categoryColor: 'bg-amber-100 text-amber-700'
+    image: '/images/hometown_cafe.jpg'
+    mapsUrl: 'https://maps.app.goo.gl/Yt1NsV1WVvmseXBV7'
+    socialUrl: 'https://web.facebook.com/hometowncafeph'

@@ -1,9 +1,9 @@
 {
-  "site_name": "Lapu Lapu City Portal",
-  "site_description": "A community-run portal for the Lapu Lapu City",
+  "site_name": "Olongapo City Portal",
+  "site_description": "A community-run portal for the Olongapo City",
   "hero": {
     "title": "Welcome to BetterGov.ph",
-    "subtitle": "A community-run portal to find information of the Lapu Lapu City Government",
+    "subtitle": "A community-run portal to find information and services of the Municipality of Olongapo.",
     "nationalId": "National ID",
     "birthCertificate": "Birth Certificate",
     "businessRegistration": "Business Registration"
@@ -18,6 +18,22 @@
   "governmentActivity": {
     "title": "Government Activity",
     "description": "Stay updated with the latest government activities and announcements."
+  },
+  "weatherMap": {
+    "title": "Weather & Location",
+    "location": "Olongapo, Zambales",
+    "clear": "Clear sky",
+    "partlyCloudy": "Partly cloudy",
+    "foggy": "Foggy",
+    "rainy": "Rainy",
+    "showers": "Showers",
+    "thunderstorm": "Thunderstorm",
+    "defaultCondition": "Loading weather...",
+    "wind": "km/h wind",
+    "climate": "Tropical climate",
+    "elevation": "299.5m elevation",
+    "loading": "Fetching live weather data...",
+    "mapTitle": "Map of Olongapo, Zambales"
   },
   "weather": {
     "title": "Weather Updates"
