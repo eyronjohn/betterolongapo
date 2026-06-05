@@ -1,7 +1,7 @@
 places:
   - name: 'Kape ni Mon'
     slug: 'kape-ni-mon'
-    description: 'A local cafe with a variety coffee drinks at am affordable price.'
+    description: 'A local cafe with a variety coffee drinks at an affordable price.'
     category: 'Cafes & Dining'
     barangay: 'East Bajac-Bajac'
     categoryColor: 'bg-amber-100 text-amber-700'
