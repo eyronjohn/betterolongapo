@@ -1,5 +1,9 @@
 import yaml from 'js-yaml';
 
+export const loadYamlData = <T>(raw: string): T => {
+  return yaml.load(raw) as T;
+};
+
 // Type definitions for the services data
 export interface Subcategory {
   name: string;
@@ -12,6 +16,7 @@ export interface Category {
   slug: string;
   description: string;
   icon: string;
+  type: string; // e.g., 'service', 'tourism', etc.
   subcategories?: Subcategory[]; // Keep for backward compatibility
 }
 
@@ -27,9 +32,107 @@ export interface CategoryIndexData {
   pages: Subcategory[];
 }
 
+export interface ExecutiveOfficial {
+  slug: string;
+  name: string;
+  role: string;
+  office?: string;
+  address?: string;
+  contact?: {
+    email?: string;
+    phone?: string;
+  };
+  website?: string;
+  isElected?: boolean;
+  personId?: string;
+}
+
+export interface LegislativeOfficial {
+  name: string;
+  position: string;
+  contact?: {
+    email?: string;
+    phone?: string;
+  };
+  website?: string;
+  personId?: string;
+  committee_chair?: string[];
+  committee_vice_chair?: string[];
+  committee_member?: string[];
+}
+
+export interface BarangayOfficial {
+  role: string;
+  name: string | null;
+  contact: string | null;
+  email: string | null;
+}
+
+export interface Barangay {
+  slug: string;
+  barangay_name: string;
+  address: string | null;
+  trunkline: string[] | null;
+  website: string | null;
+  officials: BarangayOfficial[] | null;
+}
+
+export interface MunicipalOffice {
+  slug: string;
+  office_name: string;
+  website?: string;
+  department_head?: {
+    name: string;
+    contact?: string;
+  };
+}
+
+export interface AboutOlongapoStat {
+  label: string;
+  value: string;
+  sublabel?: string;
+  asOf?: string;
+  icon?: string;
+}
+
+export interface AboutOlongapoTimelineEntry {
+  year: string;
+  event: string;
+}
+
+export interface AboutOlongapoData {
+  name: string;
+  province: string;
+  description: string;
+  history: string;
+  geography?: string;
+  economy?: string;
+  stats: AboutOlongapoStat[];
+  timeline: AboutOlongapoTimelineEntry[];
+  card_description?: string;
+}
+
+export interface BetterGovBenefit {
+  audience: string;
+  icon?: string;
+  description: string;
+}
+
+export interface AboutBetterGovData {
+  name: string;
+  tagline?: string;
+  description: string;
+  mission: string;
+  why: string;
+  benefits: BetterGovBenefit[];
+  card_description?: string;
+}
+
 // Import the YAML file as raw text
 import servicesYamlContent from './services.yaml?raw';
 import governmentActivitiesYamlContent from './government.yaml?raw';
+import aboutOlongapoYamlContent from './about_olongapo.yaml?raw';
+import aboutBetterGovYamlContent from './about_bettergov.yaml?raw';
 
 // Import all category index files statically
 import healthServicesIndex from '../../content/services/health-services/index.yaml?raw';
@@ -39,17 +142,13 @@ import socialWelfareIndex from '../../content/services/social-welfare/index.yaml
 import agricultureFisheriesIndex from '../../content/services/agriculture-fisheries/index.yaml?raw';
 import infrastructurePublicWorksIndex from '../../content/services/infrastructure-public-works/index.yaml?raw';
 import garbageWasteDisposalIndex from '../../content/services/garbage-waste-disposal/index.yaml?raw';
-import environmentIndex from '../../content/services/environment/index.yaml?raw';
-import disasterPreparednessIndex from '../../content/services/disaster-preparedness/index.yaml?raw';
-import housingLandUseIndex from '../../content/services/housing-land-use/index.yaml?raw';
-import governmentDepartmentsIndex from '../../content/government/departments/index.yaml?raw';
-// import electedOfficialsIndex from '../../content/government/elected-officials/index.yaml?raw';
+import tourismIndex from '../../content/services/tourism/index.yaml?raw';
+import electedOfficialsIndex from '../../content/government/elected-officials/index.yaml?raw';
 import municipalOfficesIndex from '../../content/government/municipal-offices/index.yaml?raw';
 import barangaysIndedex from '../../content/government/barangays/index.yaml?raw';
-// import governmentIndex from '../../content/government/index.yaml?raw';
+import governmentIndex from '../../content/government/index.yaml?raw';
 import executiveIndex from '../../content/government/elected-officials/executive/index.yaml?raw';
 import legislativeIndex from '../../content/government/elected-officials/legislative/index.yaml?raw';
-import governmentDepartmentsLegislativeIndex from '../../content/government/departments/legislative/index.yaml?raw';
 
 // Create a mapping of category slugs to their YAML content
 const categoryIndexMap: { [key: string]: string } = {
@@ -60,12 +159,37 @@ const categoryIndexMap: { [key: string]: string } = {
   'agriculture-fisheries': agricultureFisheriesIndex,
   'infrastructure-public-works': infrastructurePublicWorksIndex,
   'garbage-waste-disposal': garbageWasteDisposalIndex,
-  environment: environmentIndex,
-  'disaster-preparedness': disasterPreparednessIndex,
-  'housing-land-use': housingLandUseIndex,
-  departments: governmentDepartmentsIndex,
-  legislative: governmentDepartmentsLegislativeIndex,
+  tourism: tourismIndex,
+  // 'departments': departmentsIndex, // Removed to fix undefined error
+  government: governmentIndex,
+  'elected-officials': electedOfficialsIndex,
+  executive: executiveIndex,
+  legislative: legislativeIndex,
+  'municipal-offices': municipalOfficesIndex,
+  barangays: barangaysIndedex,
 };
+
+function parseYamlArray<T>(yamlContent: string): T[] {
+  try {
+    const parsed = yaml.load(yamlContent);
+    if (Array.isArray(parsed)) return parsed as T[];
+    if (parsed && typeof parsed === 'object' && 'officials' in parsed)
+      return (parsed as { officials: T[] }).officials;
+    return [];
+  } catch {
+    return [];
+  }
+}
+
+function parseYamlObject<T>(yamlContent: string, fallback: T): T {
+  try {
+    const parsed = yaml.load(yamlContent);
+    if (parsed && typeof parsed === 'object') return parsed as T;
+    return fallback;
+  } catch {
+    return fallback;
+  }
+}
 
 // Parse the YAML content
 export const serviceCategories: CategoryData = yaml.load(
@@ -128,25 +252,37 @@ export async function loadCategoryIndex(
   categorySlug: string
 ): Promise<CategoryIndex> {
   const yamlContent = categoryIndexMap[categorySlug];
+
   if (!yamlContent) {
-    return { layout: 'list', pages: [] };
-  }
-  try {
-    const indexData: CategoryIndexData = yaml.load(
-      yamlContent
-    ) as CategoryIndexData;
     return {
-      title: indexData.title,
-      description: indexData.description,
+      title: '',
+      description: '',
+      layout: 'list',
+      pages: [],
+    };
+  }
+
+  try {
+    const indexData = yaml.load(yamlContent) as CategoryIndexData;
+
+    return {
+      title: indexData.title ?? '',
+      description: indexData.description ?? '',
       layout: indexData.layout ?? 'list',
-      pages: indexData.pages || [],
+      pages: indexData.pages ?? [],
     };
   } catch (parseError) {
     console.warn(
       `Failed to parse YAML content for category ${categorySlug}:`,
       parseError
     );
-    return { layout: 'list', pages: [] };
+
+    return {
+      title: '',
+      description: '',
+      layout: 'list',
+      pages: [],
+    };
   }
 }
 
@@ -161,7 +297,9 @@ export async function getCategorySubcategories(
   }
 
   const result = await loadCategoryIndex(categorySlug);
+
   categoryCache.set(categorySlug, result);
+
   return result;
 }
 
@@ -169,28 +307,3 @@ export async function getCategorySubcategories(
 export function isNestedCategory(slug: string): boolean {
   return slug in categoryIndexMap;
 }
-
-function parseYamlArray<T>(yamlContent: string): T[] {
-  try {
-    const parsed = yaml.load(yamlContent);
-    if (Array.isArray(parsed)) return parsed as T[];
-    if (parsed && typeof parsed === 'object' && 'officials' in parsed)
-      return (parsed as { officials: T[] }).officials;
-    return [];
-  } catch {
-    return [];
-  }
-}
-
-function parseYamlObject<T>(yamlContent: string, fallback: T): T {
-  try {
-    const parsed = yaml.load(yamlContent);
-    if (parsed && typeof parsed === 'object') return parsed as T;
-    return fallback;
-  } catch {
-    return fallback;
-  }
-}
-
-import aboutOlongapoYamlContent from './about_olongapo.yaml?raw';
-import aboutBetterGovYamlContent from './about_bettergov.yaml?raw';

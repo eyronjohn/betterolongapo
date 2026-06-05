@@ -35,13 +35,22 @@ const Services: React.FC = () => {
   ] as React.ComponentType<{ className?: string }>;
 
   useEffect(() => {
-    if (category && categoryData) {
-      setLoading(true);
-      getCategorySubcategories(category)
-        .then(setCategoryIndex)
-        .catch(console.error)
-        .finally(() => setLoading(false));
-    }
+    if (!category || !categoryData) return;
+
+    const load = async () => {
+      try {
+        setLoading(true);
+
+        const data = await getCategorySubcategories(category);
+        setCategoryIndex(data);
+      } catch (error) {
+        console.error(error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    load();
   }, [category, categoryData]);
 
   if (!category) {

@@ -46,7 +46,7 @@ export default function MunicipalOffices() {
 
       <div className="mb-8 flex flex-col md:flex-row md:items-center gap-4">
         <Text
-          size="xs"
+          size="sm"
           className="text-gray-500 font-bold tracking-widest uppercase"
         >
           {sortedOffices.length} active offices

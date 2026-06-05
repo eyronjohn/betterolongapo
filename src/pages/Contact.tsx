@@ -261,7 +261,7 @@ const Contact = () => {
           </div>
         </Section>
 
-        <Section className="pb-12" maxWidth="6xl">
+        <Section className="pb-12 max-w-6xl">
           <div className="mb-6">
             <Heading level={4}>Report or Suggest Changes</Heading>
             <Text className="mt-2 max-w-none text-gray-600 leading-relaxed">

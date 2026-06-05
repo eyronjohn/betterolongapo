@@ -103,12 +103,14 @@ export default function Hero() {
         slug: string;
       }[];
       const serviceResults = await Promise.all(
-        serviceCats.map(cat =>
-          loadCategoryIndex(cat.slug).then(idx => ({
+        serviceCats.map(async cat => {
+          const idx = await loadCategoryIndex(cat.slug);
+
+          return {
             cat,
             pages: idx.pages,
-          }))
-        )
+          };
+        })
       );
 
       for (const { cat, pages } of serviceResults) {
@@ -131,12 +133,14 @@ export default function Hero() {
         { slug: 'reports-and-statistics', name: 'Reports & Stats' },
       ];
       const govtResults = await Promise.all(
-        govtCats.map(cat =>
-          loadCategoryIndex(cat.slug).then(idx => ({
+        govtCats.map(async cat => {
+          const idx = await loadCategoryIndex(cat.slug);
+
+          return {
             cat,
             pages: idx.pages,
-          }))
-        )
+          };
+        })
       );
 
       for (const { cat, pages } of govtResults) {

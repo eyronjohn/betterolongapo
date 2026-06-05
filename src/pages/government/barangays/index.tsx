@@ -88,8 +88,8 @@ export default function BarangaysIndex() {
                       </div>
                       <div className="min-w-0">
                         <Text
-                          size="xs"
-                          className="text-kapwa-text-support text-[10px]! mb-0.5 leading-none font-bold tracking-tighter uppercase"
+                          size="sm"
+                          className="xs text-kapwa-text-support text-[10px]! mb-0.5 leading-none font-bold tracking-tighter uppercase"
                         >
                           Punong Barangay
                         </Text>

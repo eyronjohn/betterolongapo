@@ -4,7 +4,7 @@ export function Text({
   className = '',
   children,
 }: {
-  size?: 'sm' | 'md' | 'lg';
+  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
   transform?: 'none' | 'uppercase' | 'lowercase';
   className?: string;
   children: React.ReactNode;
@@ -16,7 +16,7 @@ export function Text({
   };
   return (
     <p
-      className={`text-${size} mb-2 max-w-lg ${transformClasses[transform]} ${className}`}
+      className={`text-${size} max-w-lg ${transformClasses[transform]} ${className}`}
     >
       {children}
     </p>
