@@ -5,7 +5,7 @@ import { toTitleCase } from '../../lib/stringUtils';
 // import { Heading } from '@/components/ui/Heading';
 import { Heading } from '../ui/Heading';
 import { Text } from '../ui/Text';
-import type { ExecutiveOfficial } from '@/data/yamlLoader';
+import type { ExecutiveOfficial } from '../../data/yamlLoader';
 
 export default function ElectedLeaderCard({
   leader,

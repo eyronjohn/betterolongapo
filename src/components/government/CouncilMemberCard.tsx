@@ -18,7 +18,7 @@ export default function CouncilMemberCard({
         {/* Row 1 */}
         <div>
           <Text
-            size="xs"
+            size="sm"
             className="text-primary-700 mb-0.5 font-bold tracking-widest uppercase"
           >
             {member.position || 'SB Member'}
