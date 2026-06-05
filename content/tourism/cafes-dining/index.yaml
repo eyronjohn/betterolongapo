@@ -1,5 +1,5 @@
 places:
-  - name: "Kape ni Mon"
+  - name: 'Kape ni Mon'
     slug: 'kape-ni-mon'
     description: 'A local cafe with a variety coffee drinks at am affordable price.'
     category: 'Cafes & Dining'
@@ -9,7 +9,7 @@ places:
     mapsUrl: 'https://maps.app.goo.gl/xb48DqNKPA99bB6q9'
     socialUrl: 'https://web.facebook.com/p/Kape-ni-Mon-61554902993657/'
 
-  - name: "Hometown Cafe"
+  - name: 'Hometown Cafe'
     slug: 'hometown-cafe'
     description: 'A specialty coffee shop, micro coffee roastery, bakery, kitchen, and cocktail bar.'
     category: 'Cafes & Dining'

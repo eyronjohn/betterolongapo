@@ -47,7 +47,7 @@ categories:
   # Cultural and Heritage Sites
   - category: 'Cultural and Heritage Sites'
     slug: 'cultural-heritage'
-    description: "Visit historical landmarks and cultural sites."
+    description: 'Visit historical landmarks and cultural sites.'
     icon: 'Landmark'
     color:
       bg: 'bg-purple-100'

@@ -1,7 +1,7 @@
 places:
   - name: 'Spanish Gate'
     slug: 'spanish-gate'
-    description: "A historical gate built in 1885, the only surviving remnant of the original Spanish arsenal."
+    description: 'A historical gate built in 1885, the only surviving remnant of the original Spanish arsenal.'
     barangay: 'SBFZ'
     category: 'Cultural Heritage'
     categoryColor: 'bg-rose-100 text-rose-700'
@@ -10,7 +10,7 @@ places:
 
   - name: 'Ulo ng Apo'
     slug: 'ulo-ng-apo'
-    description: "A symbolic statue representing the local legend of the village leader Apo, whose legacy of justice and fairness gave the city its name."
+    description: 'A symbolic statue representing the local legend of the village leader Apo, whose legacy of justice and fairness gave the city its name.'
     category: 'Cultural Heritage'
     categoryColor: 'bg-rose-100 text-rose-700'
     image: '/images/ulo_ng_apo.png'

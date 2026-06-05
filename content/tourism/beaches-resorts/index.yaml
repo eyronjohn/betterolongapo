@@ -9,7 +9,7 @@ places:
     image: '/images/limliwa.jpg'
     mapsUrl: 'https://maps.app.goo.gl/vSbymCSQaVMfuUSg9'
     featured: true
-  
+
   - name: 'Camayan Beach Resort'
     slug: 'camayan-beach-resort'
     description: 'A a tranquil, tropical destination located in the Subic Bay Freeport Zone, Philippines, where the lush forest meets clear, calm waters'
@@ -38,6 +38,3 @@ places:
     image: '/images/crystal.jpg'
     mapsUrl: 'https://maps.app.goo.gl/1s2YUPqFikqUCTVS9'
     featured: true
-
-
-    
