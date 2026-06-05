@@ -139,14 +139,9 @@ import healthServicesIndex from '../../content/services/health-services/index.ya
 import educationIndex from '../../content/services/education/index.yaml?raw';
 import businessIndex from '../../content/services/business/index.yaml?raw';
 import socialWelfareIndex from '../../content/services/social-welfare/index.yaml?raw';
-import agricultureFisheriesIndex from '../../content/services/agriculture-fisheries/index.yaml?raw';
-import infrastructurePublicWorksIndex from '../../content/services/infrastructure-public-works/index.yaml?raw';
-import garbageWasteDisposalIndex from '../../content/services/garbage-waste-disposal/index.yaml?raw';
-import tourismIndex from '../../content/services/tourism/index.yaml?raw';
 import electedOfficialsIndex from '../../content/government/elected-officials/index.yaml?raw';
 import municipalOfficesIndex from '../../content/government/municipal-offices/index.yaml?raw';
 import barangaysIndedex from '../../content/government/barangays/index.yaml?raw';
-import governmentIndex from '../../content/government/index.yaml?raw';
 import executiveIndex from '../../content/government/elected-officials/executive/index.yaml?raw';
 import legislativeIndex from '../../content/government/elected-officials/legislative/index.yaml?raw';
 
@@ -156,12 +151,7 @@ const categoryIndexMap: { [key: string]: string } = {
   education: educationIndex,
   business: businessIndex,
   'social-welfare': socialWelfareIndex,
-  'agriculture-fisheries': agricultureFisheriesIndex,
-  'infrastructure-public-works': infrastructurePublicWorksIndex,
-  'garbage-waste-disposal': garbageWasteDisposalIndex,
-  tourism: tourismIndex,
   // 'departments': departmentsIndex, // Removed to fix undefined error
-  government: governmentIndex,
   'elected-officials': electedOfficialsIndex,
   executive: executiveIndex,
   legislative: legislativeIndex,
