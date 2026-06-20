@@ -15,6 +15,6 @@ places:
     category: 'Cafes & Dining'
     barangay: 'Subic Bay Freeport Zone'
     categoryColor: 'bg-amber-100 text-amber-700'
-    image: '/images/homeTown_cafe.jpg'
+    image: '/images/home_town_cafe.jpg'
     mapsUrl: 'https://maps.app.goo.gl/Yt1NsV1WVvmseXBV7'
     socialUrl: 'https://web.facebook.com/hometowncafeph'
